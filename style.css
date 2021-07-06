@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    background-color: hsl(229, 57%, 11%);
+    max-width: 70%;
+    min-height: 70vh;
+    margin: 120px 0 0 220px;
+    color: white;
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-size: 100% 300px;
+}
+.first{
+    background-color:  hsl(228, 56%, 26%);
+    padding: 30px 120px 30px 30px;
+    border-radius: 10px 100px 10px 10px;
+}
+.logo{
+    padding-bottom: 20px;
+}
+.doc, .fold, .upl{
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px; 
+    height: 35px;
+    border-radius: 10px;
+    width: 40px;
+    margin-right: 5px;
+}
+.second{
+    background-color:  hsl(228, 56%, 26%);
+    padding: 30px;
+    height: 100px;
+    width: 300px;
+}
+.second p{
+    color:  hsl(229, 7%, 55%);
+}
+.second p span{
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+.progress{
+        position: relative;
+        width:90%;
+        height:15px;
+        border-radius:10px;
+        background:hsl(229, 57%, 11%);
+  }
+  .progress::before{
+    content:'';
+    display:flex;
+    align-items: center;
+   
+    position: absolute;
+    width:81.5%;
+    height:15px;
+    background:linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius:10px;
+  }
+  .progress::after{
+    content:'';
+    background-color:#ffff;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    position: absolute;
+    margin-left:75%;
+    margin-top: 2.5px;
+}
+.box{
+    width:150px;
+    height:60px;
+    background-color: #ffff;
+    color:#000;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    /* left:60px;
+    bottom:70px; */
+}
+.box::after{
+    content:'';
+    position:absolute;
+    right:0px;
+    top:45px;
+    border-top:15px solid transparent;
+    border-right:25px solid #ffff;
+    border-left:none;
+    border-bottom:25px solid transparent;
+}
+h1{
+    position: relative;
+    font-size:35px;
+}
+
+.box-text{
+    color:hsl(229, 7%, 55%);
+    font-size:12px;
+    letter-spacing:2px;
+    position: relative;
+}
+.start{
+    padding-right: 130px;
+}
+@media screen and (min-width: 375px) and (max-width: 880px){
+    main{
+        background-image: url(./images/bg-mobile.png);
+        max-width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        background-size:  850px 100% ;
+        /* background-repeat:repeat; */
+        flex-direction: column;
+    }
+    }
+   
